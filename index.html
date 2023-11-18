@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>iamcheeseman</title>
+    <style>
+      p {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>iamcheeseman</h1>
+    <p>
+    I'm <span id="age">a 13</span> year old game dev from Maine.
+    I've been doing game dev with Godot and Lua/Love2D since ~2019, and have yet
+    to release a finished solo project.
+    </p>
+
+    <h2>Projects:</h2>
+    <ul>
+      <li>Red Nivis</li>
+      <li>Meat n' Moe</li>
+      <li><a href="https://iamcheeseman.itch.io/no-my-substance">NO! MY SUBSTANCE</a> (Unfinished)</li>
+      <li><a href="https://ne-mene.itch.io/abyssus">Abyssus</a></li>
+      <li><a href="https://github.com/IAmCheeseman/point">Point Game Engine</a></li>
+    </ul>
+
+    <h2>Other Skills:</h2>
+    <ul>
+      <li>Linux (Daily driver for <span id="linux">2+</span> years)</li>
+      <li>Beginner-level C</li>
+      <li>Neovim</li>
+    </ul>
+
+    <h2>Mao:</h2>
+    <img src="mao.png" width="200px">
+  </body>
+  <script type="text/javascript">
+    let age = Math.floor((new Date() - new Date(2006, 3, 25)) / 1000 / 60 / 60 / 24 / 365.25);
+    let linux = Math.floor((new Date() - new Date(2021, 0, 0)) / 1000 / 60 / 60 / 24 / 365.25);
+    document.getElementById("age").innerHTML = `${age == 18 ? 'an' : 'a'} ${age}`;
+    document.getElementById("linux").innerHTML = `${linux}+`
+  </script>
+</html>
